@@ -1,6 +1,4 @@
-#
 # ~/.bashrc
-#
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -32,9 +30,6 @@ fi
 
 PS1='\[\e[1;32m\]\h \[\e[1;94m\]\w$(__git_ps1 " \[\e[0;34m\]git:(\[\e[1;31m\]%s\[\e[0;34m\])")\[\e[0m\]\n\$ '
 
-
-# Nothing
-# PS1='\[\e[1;34m\]\w \[\e[1;31m\]$(__git_ps1 "(%s)") \[\e[0m\]\$ '
 
 PROMPT_DIRTRIM=1
 
