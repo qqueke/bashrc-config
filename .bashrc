@@ -108,10 +108,10 @@ fi
 # eval "$(pyenv virtualenv-init -)"
 
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+
+export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init --path)"
-eval "$(pyenv init - bash)"
+# eval "$(pyenv init - bash)"
 eval "$(pyenv virtualenv-init -)"
 
 export ROCM_PATH=/opt/rocm
