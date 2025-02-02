@@ -100,3 +100,4 @@ if [ -z "$(pgrep -x Hyprland)" ]; then
     /home/QQueke/.config/hypr/starthypr.sh
 fi
 
+. "$HOME/.cargo/env"
