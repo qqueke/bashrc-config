@@ -115,4 +115,4 @@ eval "$(pyenv init --path)"
 eval "$(pyenv virtualenv-init -)"
 
 export ROCM_PATH=/opt/rocm
-# export HSA_OVERRIDE_GFX_VERSION=10.3.0
+export HSA_OVERRIDE_GFX_VERSION=10.3.0
