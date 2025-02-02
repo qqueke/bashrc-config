@@ -76,7 +76,7 @@ PROMPT_DIRTRIM=1
 #unset __conda_setup
 #
 ## <<< conda initialize <<<
-#export PATH="/home/QQueke/anaconda3/bin:$PATH"
+export PATH="/home/QQueke/anaconda3/bin:$PATH"
 
 # CUDA export and LIB?! 
 export PATH=/opt/cuda/bin:$PATH
