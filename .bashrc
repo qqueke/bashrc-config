@@ -72,6 +72,9 @@ export PATH=/opt/cuda/nsight_systems/bin/:$PATH
 #Cuda Nsight Compute export
 export PATH=/opt/cuda/nsight_compute/:$PATH
 
+# Ida
+export PATH=$PATH:/opt/ida-free
+
 # GO PATH export
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
