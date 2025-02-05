@@ -60,7 +60,7 @@ PROMPT_DIRTRIM=1
 
 
 
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/QQueke/Documents/Repositories/msquic/build/obj/Release:
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/QQueke/Documents/Repositories/msquic/build/obj/Release
 
 # CUDA export and LIB?! 
 export PATH=/opt/cuda/bin:$PATH
