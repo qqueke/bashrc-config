@@ -64,7 +64,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/QQueke/Documents/Repositories/msqu
 
 # CUDA export and LIB?! 
 export PATH=/opt/cuda/bin:$PATH
-export LD_LIBRARY_PATH=/opt/cuda/lib:$LD_LIBRARY_PATH
+# export LD_LIBRARY_PATH=/opt/cuda/lib:$LD_LIBRARY_PATH
 
 #Cuda Nsight Systems export
 export PATH=/opt/cuda/nsight_systems/bin/:$PATH
