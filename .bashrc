@@ -104,4 +104,4 @@ eval "$(pyenv virtualenv-init -)"
 export ROCM_PATH=/opt/rocm
 export HSA_OVERRIDE_GFX_VERSION=10.3.0
 
-ulimit -n 100000
+ulimit -n 64000
