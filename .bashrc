@@ -8,7 +8,7 @@ alias ls='ls --color=auto'
 alias vim=nvim
 
 
-alias vim bashrc=nvim ~/.bashrc
+alias ebashrc='nvim ~/.bashrc'
 
 
 alias mux='pgrep -vx tmux > /dev/null && \
