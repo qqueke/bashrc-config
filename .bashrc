@@ -7,6 +7,10 @@ alias ls='ls --color=auto'
 
 alias vim=nvim
 
+
+alias nvim bashrc=nvim ~/.bashrc
+
+
 alias mux='pgrep -vx tmux > /dev/null && \
         tmux new -d -s delete-me && \
         tmux run-shell ~/.tmux/plugins/tmux-resurrect/scripts/restore.sh && \
