@@ -10,6 +10,9 @@ alias vim=nvim
 
 alias ebashrc='nvim ~/.bashrc'
 
+
+alias sbashrc='source ~/.bashrc'
+
 alias fvim='nvim $(fzf -m --preview="bat --color=always {}")'
 
 alias mux='pgrep -vx tmux > /dev/null && \
