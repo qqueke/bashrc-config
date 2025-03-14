@@ -104,6 +104,7 @@ fi
 
 
 
+export FZF_DEFAULT_COMMAND='find . -type f'
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init --path)"
 # eval "$(pyenv init - bash)"
