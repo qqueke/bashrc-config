@@ -15,6 +15,8 @@ alias fvim='nvim $(fzf -m --preview="bat --color=always {}")'
 
 alias getenv='printenv | grep -i'
 
+alias df='df -h'
+
 alias mux='pgrep -vx tmux > /dev/null && \
         tmux new -d -s delete-me && \
         tmux run-shell ~/.tmux/plugins/tmux-resurrect/scripts/restore.sh && \
