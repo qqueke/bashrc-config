@@ -14,6 +14,9 @@ alias sbashrc='source ~/.bashrc'
 alias fvim='nvim $(fzf -m --preview="bat --color=always {}")'
 
 alias grep='grep --color=auto'
+
+alias egrep='egrep --color=auto'
+
 alias getenv='printenv | grep -i'
 
 alias df='df -h'
