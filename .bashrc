@@ -7,9 +7,7 @@ alias ls='ls --color=auto'
 
 alias vim=nvim
 
-
 alias ebashrc='nvim ~/.bashrc'
-
 
 alias sbashrc='source ~/.bashrc'
 
