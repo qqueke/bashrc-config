@@ -124,6 +124,7 @@ export ROCM_PATH=/opt/rocm
 export HSA_OVERRIDE_GFX_VERSION=10.3.0
 
 
+export LD_LIBRARY_PATH=/home/QQueke/.local/lib:$LD_LIBRARY_PATH
 eval "$(fzf --bash)"
 
 ulimit -n 64000
