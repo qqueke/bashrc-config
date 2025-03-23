@@ -131,3 +131,6 @@ export LD_LIBRARY_PATH=/home/QQueke/.local/lib:$LD_LIBRARY_PATH
 eval "$(fzf --bash)"
 
 ulimit -n 64000
+
+# Created by `userpath` on 2025-03-23 12:06:33
+export PATH="$PATH:/home/QQueke/.local/bin"
