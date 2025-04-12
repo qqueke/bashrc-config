@@ -133,6 +133,7 @@ eval "$(fzf --bash)"
 ulimit -n 64000
 
 export PATH="$HOME/.local/share/gem/ruby/3.3.0/bin:$PATH"
+
 # Created by `userpath` on 2025-03-23 12:06:33
 export PATH="$PATH:/home/QQueke/.local/bin"
 
