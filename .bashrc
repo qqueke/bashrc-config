@@ -97,7 +97,7 @@ export PATH=/opt/cuda/nsight_systems/bin/:$PATH
 export PATH=/opt/cuda/nsight_compute/:$PATH
 
 # Ida
-export PATH=$PATH:/opt/ida-free/:$PATH
+export PATH=$PATH:/opt/ida-free
 
 # GO PATH export
 export GOPATH="$HOME/go"
