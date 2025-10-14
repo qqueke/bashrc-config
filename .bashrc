@@ -44,7 +44,6 @@ fi
 
 PS1='\[\e[1;32m\]\h \[\e[1;94m\]\w$(__git_ps1 " \[\e[0;34m\]git:(\[\e[1;31m\]%s\[\e[0;34m\])")\[\e[0m\]\n\$ '
 
-
 PROMPT_DIRTRIM=1
 
 # Ida
