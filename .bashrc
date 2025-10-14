@@ -42,16 +42,6 @@ if [ -f /usr/share/git/completion/git-prompt.sh ]; then
     source /usr/share/git/completion/git-prompt.sh
 fi
 
-# All names
-# PS1='\[\e[1;32m\]\u@\h \[\e[1;34m\]\w \[\e[1;31m\]$(__git_ps1 "(%s)") \[\e[0m\]\$ '
-
-# Just machine name
-# PS1='\[\e[1;32m\]\h \[\e[1;34m\]\w \[\e[1;31m\]$(__git_ps1 "(%s)") \[\e[0m\]\$ '
-
-# PS1='\[\e[1;32m\]\h \[\e[1;34m\]\w \[\e[1;31m\]$(__git_ps1 "(%s)")\[\e[0m\]\n\$ '
-
-
-
 PS1='\[\e[1;32m\]\h \[\e[1;94m\]\w$(__git_ps1 " \[\e[0;34m\]git:(\[\e[1;31m\]%s\[\e[0;34m\])")\[\e[0m\]\n\$ '
 
 
