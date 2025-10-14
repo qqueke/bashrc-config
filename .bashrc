@@ -118,6 +118,8 @@ fi
 # eval "$(pyenv init - bash)"
 # eval "$(pyenv virtualenv-init -)"
 
+
+
 export FZF_DEFAULT_COMMAND='find . -type f'
 
 export PATH="$HOME/.pyenv/bin:$PATH"
