@@ -57,16 +57,6 @@ PS1='\[\e[1;32m\]\h \[\e[1;94m\]\w$(__git_ps1 " \[\e[0;34m\]git:(\[\e[1;31m\]%s\
 
 PROMPT_DIRTRIM=1
 
-# CUDA export and LIB?! 
-export PATH=/opt/cuda/bin:$PATH
-# export LD_LIBRARY_PATH=/opt/cuda/lib:$LD_LIBRARY_PATH
-
-#Cuda Nsight Systems export
-export PATH=/opt/cuda/nsight_systems/bin/:$PATH
-
-#Cuda Nsight Compute export
-export PATH=/opt/cuda/nsight_compute/:$PATH
-
 # Ida
 export PATH=$PATH:/opt/ida-free
 
