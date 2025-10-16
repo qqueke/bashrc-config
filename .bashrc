@@ -46,6 +46,10 @@ PS1='\[\e[1;32m\]\u \[\e[1;94m\]\w$(__git_ps1 " \[\e[0;34m\]git:(\[\e[1;31m\]%s\
 
 PROMPT_DIRTRIM=1
 
+
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+    . /usr/share/bash-completion/bash_completion
+
 # Ida
 export PATH=$PATH:/opt/ida-free
 
