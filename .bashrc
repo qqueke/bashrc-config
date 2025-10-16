@@ -80,3 +80,4 @@ ulimit -n 64000
 export PATH="$HOME/.local/share/gem/ruby/3.3.0/bin:$PATH"
 
 export PATH="$PATH:/home/QQueke/.local/bin"
+source -- ~/.local/share/blesh/ble.sh
