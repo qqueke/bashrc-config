@@ -92,7 +92,6 @@ fi
 
 . "$HOME/.cargo/env"
 
-export FZF_DEFAULT_COMMAND='find . -type f'
 
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init --path)"
@@ -102,14 +101,19 @@ export ROCM_PATH=/opt/rocm
 export HSA_OVERRIDE_GFX_VERSION=10.3.0
 
 export LD_LIBRARY_PATH=/home/QQueke/.local/lib:$LD_LIBRARY_PATH
-eval "$(fzf --bash)"
 
 ulimit -n 64000
 
 export PATH="$HOME/.local/share/gem/ruby/3.3.0/bin:$PATH"
 
 export PATH="$PATH:/home/QQueke/.local/bin"
+
+
+export FZF_DEFAULT_COMMAND='find . -type f'
+eval "$(fzf --bash)"
+
 source -- ~/.local/share/blesh/ble.sh
+
 # shellcheck disable=SC2034
 
 # If not running interactively, don't do anything
