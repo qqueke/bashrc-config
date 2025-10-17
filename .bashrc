@@ -108,7 +108,6 @@ eval "$(fzf --bash)"
 BLE_DIR="$HOME/.local/share/blesh"
 
 if [ ! -d "$BLE_DIR" ]; then
-
     echo "Installing ble.sh..."
     rm -rf "$BLE_DIR"  # clean broken clone if any
     git clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyoga/ble.sh.git
