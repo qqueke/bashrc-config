@@ -103,18 +103,12 @@ fi
 
 # --- ble.sh ---
 BLE_DIR="$HOME/.local/share/blesh"
-BLE_SH="$BLE_DIR/ble.sh"
 
-if [ ! -f "$BLE_SH" ]; then
+if [ ! -d "$BLE_DIR" ]; then
     echo "Installing ble.sh..."
     mkdir -p "$BLE_DIR"
     git clone --depth=1 https://github.com/akinomyoga/ble.sh.git "$BLE_DIR"
 fi
-
-# Source ble.sh
-[[ -f "$BLE_SH" ]] && source "$BLE_SH"
-
-
 
 export FZF_DEFAULT_COMMAND='find . -type f'
 eval "$(fzf --bash)"
