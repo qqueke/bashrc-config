@@ -142,7 +142,7 @@ TODO="t"
 # Set Xterm/screen/Tmux title with shortened command and directory.
 # Uncomment this to set.
 #SHORT_TERM_LINE=true
-
+export EDITOR='nvim'
 # Set vcprompt executable path for scm advance info in prompt (demula theme)
 # https://github.com/djl/vcprompt
 #VCPROMPT_EXECUTABLE=~/.vcprompt/bin/vcprompt
