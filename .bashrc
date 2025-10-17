@@ -95,7 +95,8 @@ if [ ! -d "$HOME/.bash_it" ]; then
 fi
 
 # --- fzf ---
-if [ ! -d "$HOME/.fzf" ]; then
+FZF_DIR="$HOME/.local/share/blesh"
+if [ ! -d "$FZF_DIR" ]; then
     echo "Installing fzf..."
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     ~/.fzf/install --all --no-bash --no-fish --no-zsh
