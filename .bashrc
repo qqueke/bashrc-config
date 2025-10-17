@@ -90,6 +90,7 @@ command_exists() { command -v "$1" >/dev/null 2>&1; }
 # --- Bash-it ---
 BASH_IT_DIR="$HOME/.bash_it"
 if [ ! -d "$BASH_IT_DIR" ]; then
+    rm -rf "$BASH_IT_DIR"  # clean broken clone if any
     echo "Installing Bash-it..."
     git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
     ~/.bash_it/install.sh --silent
