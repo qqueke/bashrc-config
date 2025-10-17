@@ -1,35 +1,5 @@
 # ~/.bashrc
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-
-# -----------------------------
-# Install missing dependencies via git only
-# -----------------------------
-command_exists() { command -v "$1" >/dev/null 2>&1; }
-
-# --- Bash-it ---
-if [ ! -d "$HOME/.bash_it" ]; then
-    echo "Installing Bash-it..."
-    git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
-    ~/.bash_it/install.sh --silent
-fi
-
-# --- fzf ---
-if [ ! -d "$HOME/.fzf" ]; then
-    echo "Installing fzf..."
-    git clone --depth=1 https://github.com/junegunn/fzf.git ~/.fzf
-    ~/.fzf/install --all --no-bash --no-fish --no-zsh
-fi
-
-# --- ble.sh ---
-BLE_SH="$HOME/.local/share/blesh/ble.sh"
-if [ ! -d "$BLE_SH" ]; then
-    echo "Installing ble.sh..."
-    mkdir -p "$(dirname "$BLE_SH")"
-    git clone --depth=1 https://github.com/akinomyoga/ble.sh.git "$BLE_SH"
-fi
-
 alias ls='ls --color=auto'
 
 alias vim=nvim
@@ -107,6 +77,39 @@ ulimit -n 64000
 export PATH="$HOME/.local/share/gem/ruby/3.3.0/bin:$PATH"
 
 export PATH="$PATH:/home/QQueke/.local/bin"
+
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# -----------------------------
+# Install missing dependencies via git only
+# -----------------------------
+command_exists() { command -v "$1" >/dev/null 2>&1; }
+
+# --- Bash-it ---
+if [ ! -d "$HOME/.bash_it" ]; then
+    echo "Installing Bash-it..."
+    git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+    ~/.bash_it/install.sh --silent
+fi
+
+# --- fzf ---
+if [ ! -d "$HOME/.fzf" ]; then
+    echo "Installing fzf..."
+    git clone --depth=1 https://github.com/junegunn/fzf.git ~/.fzf
+    ~/.fzf/install --all --no-bash --no-fish --no-zsh
+fi
+
+# --- ble.sh ---
+BLE_SH="$HOME/.local/share/blesh/ble.sh"
+if [ ! -d "$BLE_SH" ]; then
+    echo "Installing ble.sh..."
+    mkdir -p "$(dirname "$BLE_SH")"
+    git clone --depth=1 https://github.com/akinomyoga/ble.sh.git "$BLE_SH"
+fi
+
+
 
 
 export FZF_DEFAULT_COMMAND='find . -type f'
