@@ -97,7 +97,7 @@ fi
 # --- fzf ---
 if [ ! -d "$HOME/.fzf" ]; then
     echo "Installing fzf..."
-    git clone --depth=1 https://github.com/junegunn/fzf.git ~/.fzf
+    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     ~/.fzf/install --all --no-bash --no-fish --no-zsh
 fi
 
