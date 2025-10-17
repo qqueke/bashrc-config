@@ -107,7 +107,7 @@ BLE_DIR="$HOME/.local/share/blesh"
 if [ ! -d "$BLE_DIR" ]; then
     echo "Installing ble.sh..."
     mkdir -p "$BLE_DIR"
-    git clone --depth=1 https://github.com/akinomyoga/ble.sh.git "$BLE_DIR"
+    git clone --depth=1 https://github.com/akinomyoga/ble.sh.git ~/.local/share/blesh/ble.sh
 fi
 
 export FZF_DEFAULT_COMMAND='find . -type f'
