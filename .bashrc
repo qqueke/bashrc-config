@@ -98,6 +98,7 @@ fi
 
 # --- fzf ---
 FZF_DIR="$HOME/.fzf"
+
 if [ ! -d "$FZF_DIR" ]; then
     rm -rf "$FZF_DIR"  # clean broken clone if any
     echo "Installing fzf..."
