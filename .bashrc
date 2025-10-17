@@ -104,7 +104,7 @@ fi
 # --- ble.sh ---
 BLE_DIR="$HOME/.local/share/blesh"
 
-if [ ! -f "$BLE_DIR" ]; then
+if [ ! -d "$BLE_DIR" ]; then
     echo "Installing ble.sh..."
     rm -rf "$BLE_DIR"  # clean broken clone if any
     mkdir -p "$BLE_DIR"
