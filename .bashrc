@@ -102,13 +102,17 @@ if [ ! -d "$HOME/.fzf" ]; then
 fi
 
 # --- ble.sh ---
-BLE_SH="$HOME/.local/share/blesh/ble.sh"
-if [ ! -d "$BLE_SH" ]; then
+BLE_DIR="$HOME/.local/share/blesh"
+BLE_SH="$BLE_DIR/ble.sh"
+
+if [ ! -f "$BLE_SH" ]; then
     echo "Installing ble.sh..."
-    mkdir -p "$(dirname "$BLE_SH")"
-    git clone --depth=1 https://github.com/akinomyoga/ble.sh.git "$BLE_SH"
+    mkdir -p "$BLE_DIR"
+    git clone --depth=1 https://github.com/akinomyoga/ble.sh.git "$BLE_DIR"
 fi
 
+# Source ble.sh
+[[ -f "$BLE_SH" ]] && source "$BLE_SH"
 
 
 
