@@ -105,16 +105,18 @@ fi
 BLE_DIR="$HOME/.local/share/blesh"
 
 if [ ! -d "$BLE_DIR" ]; then
+
     echo "Installing ble.sh..."
     rm -rf "$BLE_DIR"  # clean broken clone if any
-    mkdir -p "$BLE_DIR"
-    git clone --depth=1 https://github.com/akinomyoga/ble.sh.git ~/.local/share/blesh/ble.sh
+    git clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyoga/ble.sh.git
+make -C ble.sh install PREFIX=~/.local
 fi
+
+source -- ~/.local/share/blesh/ble.sh
 
 export FZF_DEFAULT_COMMAND='find . -type f'
 eval "$(fzf --bash)"
 
-source -- ~/.local/share/blesh/ble.sh
 
 # shellcheck disable=SC2034
 
