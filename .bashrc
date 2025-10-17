@@ -75,7 +75,6 @@ export LD_LIBRARY_PATH=/home/QQueke/.local/lib:$LD_LIBRARY_PATH
 ulimit -n 64000
 
 export PATH="$HOME/.local/share/gem/ruby/3.3.0/bin:$PATH"
-
 export PATH="$PATH:/home/QQueke/.local/bin"
 
 
@@ -181,7 +180,7 @@ TODO="t"
 
 # Set Xterm/screen/Tmux title with shortened command and directory.
 # Uncomment this to set.
-#SHORT_TERM_LINE=true
+SHORT_TERM_LINE=true
 export EDITOR='nvim'
 # Set vcprompt executable path for scm advance info in prompt (demula theme)
 # https://github.com/djl/vcprompt
