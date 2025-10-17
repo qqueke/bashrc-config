@@ -97,6 +97,7 @@ fi
 # --- fzf ---
 FZF_DIR="$HOME/.local/share/blesh"
 if [ ! -d "$FZF_DIR" ]; then
+    rm -rf "$FZF_DIR"  # clean broken clone if any
     echo "Installing fzf..."
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     ~/.fzf/install --all --no-bash --no-fish --no-zsh
@@ -109,8 +110,8 @@ eval "$(fzf --bash)"
 BLE_DIR="$HOME/.local/share/blesh"
 
 if [ ! -d "$BLE_DIR" ]; then
-    echo "Installing ble.sh..."
     rm -rf "$BLE_DIR"  # clean broken clone if any
+    echo "Installing ble.sh..."
     git clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyoga/ble.sh.git
     make -C ble.sh install PREFIX=~/.local
 fi
