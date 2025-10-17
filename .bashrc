@@ -149,7 +149,7 @@ TODO="t"
 
 # (Advanced): Uncomment this to make Bash-it reload itself automatically
 # after enabling or disabling aliases, plugins, and completions.
-# BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
+BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
 
 # Uncomment this to make Bash-it create alias reload.
 # BASH_IT_RELOAD_LEGACY=1
