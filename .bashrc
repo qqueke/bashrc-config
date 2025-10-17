@@ -101,6 +101,9 @@ if [ ! -d "$HOME/.fzf" ]; then
     ~/.fzf/install --all --no-bash --no-fish --no-zsh
 fi
 
+export FZF_DEFAULT_COMMAND='find . -type f'
+eval "$(fzf --bash)"
+
 # --- ble.sh ---
 BLE_DIR="$HOME/.local/share/blesh"
 
@@ -109,13 +112,11 @@ if [ ! -d "$BLE_DIR" ]; then
     echo "Installing ble.sh..."
     rm -rf "$BLE_DIR"  # clean broken clone if any
     git clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyoga/ble.sh.git
-make -C ble.sh install PREFIX=~/.local
+    make -C ble.sh install PREFIX=~/.local
 fi
 
 source -- ~/.local/share/blesh/ble.sh
 
-export FZF_DEFAULT_COMMAND='find . -type f'
-eval "$(fzf --bash)"
 
 
 # shellcheck disable=SC2034
