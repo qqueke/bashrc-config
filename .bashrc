@@ -106,6 +106,7 @@ BLE_DIR="$HOME/.local/share/blesh"
 
 if [ ! -f "$HOME/.local/share/blesh/ble.sh" ]; then
     echo "Installing ble.sh..."
+    rm -rf "$BLE_DIR"  # clean broken clone if any
     mkdir -p "$BLE_DIR"
     git clone --depth=1 https://github.com/akinomyoga/ble.sh.git ~/.local/share/blesh/ble.sh
 fi
