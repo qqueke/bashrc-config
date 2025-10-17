@@ -38,6 +38,8 @@ alias mux='pgrep -vx tmux > /dev/null && \
         tmux attach || tmux attach'
 
 
+alias gs='git status'
+
 if [ -f /usr/share/git/completion/git-prompt.sh ]; then
     source /usr/share/git/completion/git-prompt.sh
 fi
