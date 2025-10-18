@@ -43,7 +43,6 @@ fi
 
 PS1='\[\e[1;32m\]\u \[\e[1;94m\]\w$(__git_ps1 " \[\e[0;34m\]git:(\[\e[1;31m\]%s\[\e[0;34m\])")\[\e[0m\]\n\$ '
 
-export PS1="\n$(powerline-shell --shell bash)\$ "
 
 PROMPT_DIRTRIM=1
 
