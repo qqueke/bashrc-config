@@ -34,7 +34,7 @@ alias mux='pgrep -vx tmux > /dev/null && \
         tmux kill-session -t delete-me && \
         tmux attach || tmux attach'
 
-alias rebuild='cd .. && rm -rf build && mkdir -p build && cd build && cmake .. && make -j$(nproc)'
+alias rebuild='cd .. && rm -rf build && mkdir -p build && cd build && cmake ..'
 
 alias make='make -j$(nproc)'
 
