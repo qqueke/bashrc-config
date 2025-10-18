@@ -109,7 +109,6 @@ fi
 
 source -- ~/.local/share/blesh/ble.sh
 
-
 # Powerline for bash (Arch)
 if command -v powerline-daemon >/dev/null 2>&1; then
     powerline-daemon -q
