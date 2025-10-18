@@ -196,9 +196,13 @@ BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
 # Load Bash It
 source "${BASH_IT?}/bash_it.sh"
 
-THEME=$HOME/.bash/themes/powerline/powerline.base.bash
-if [ -f $THEME ]; then
-  echo 'Setting theme'
-   . $THEME
-fi
-unset THEME
+# THEME=$HOME/.bash/themes/powerline/powerline.base.bash
+# if [ -f $THEME ]; then
+#   echo 'Setting theme'
+#    . $THEME
+# fi
+# unset THEME
+function _update_ps1() {
+    PS1="$($HOME/.bash/themes/powerline-go -error $? -modules time,venv,cwd,git)"
+}
+PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
