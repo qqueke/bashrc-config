@@ -36,7 +36,7 @@ alias mux='pgrep -vx tmux > /dev/null && \
 
 alias rebuild='cd .. && rm -rf build && mkdir -p build && cd build && cmake ..'
 
-alias make='make -j$(nproc)'
+alias makej='make -j$(nproc)'
 
 alias gs='git status'
 
