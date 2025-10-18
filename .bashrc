@@ -198,6 +198,7 @@ source "${BASH_IT?}/bash_it.sh"
 
 THEME=$HOME/.bash/themes/powerline/powerline.theme.bash
 if [ -f $THEME ]; then
+  echo 'Setting theme'
    . $THEME
 fi
 unset THEME
