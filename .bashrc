@@ -196,10 +196,11 @@ BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
 # Load Bash It
 source "${BASH_IT?}/bash_it.sh"
 
-# Powerline for bash
 if command -v powerline-daemon >/dev/null 2>&1; then
     powerline-daemon -q
     export POWERLINE_BASH_CONTINUATION=1
     export POWERLINE_BASH_SELECT=1
-    source /usr/bin/powerline
+    _PL_SH="$(python3 -c "import powerline, os; print(os.path.join(os.path.dirname(powerline.__file__), 'bindings', 'bash', 'powerline.sh'))")"
+    [ -f "$_PL_SH" ] && source "$_PL_SH"
+    unset _PL_SH
 fi
