@@ -196,10 +196,10 @@ BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
 # Load Bash It
 source "${BASH_IT?}/bash_it.sh"
 
-# THEME=$HOME/.bash/themes/powerline/powerline.base.bash
-# if [ -f $THEME ]; then
-#
-#   echo 'Setting theme'
-#    . $THEME
-# fi
-# unset THEME
+# Powerline for bash
+if command -v powerline-daemon >/dev/null 2>&1; then
+    powerline-daemon -q
+    export POWERLINE_BASH_CONTINUATION=1
+    export POWERLINE_BASH_SELECT=1
+    source /usr/share/powerline/bash/powerline.sh
+fi
