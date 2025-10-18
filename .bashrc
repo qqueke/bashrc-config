@@ -201,5 +201,5 @@ if command -v powerline-daemon >/dev/null 2>&1; then
     powerline-daemon -q
     export POWERLINE_BASH_CONTINUATION=1
     export POWERLINE_BASH_SELECT=1
-    source /usr/share/powerline/bash/powerline.sh
+    source /usr/bin/powerline
 fi
