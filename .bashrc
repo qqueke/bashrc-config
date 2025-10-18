@@ -33,6 +33,7 @@ alias mux='pgrep -vx tmux > /dev/null && \
         tmux run-shell ~/.tmux/plugins/tmux-resurrect/scripts/restore.sh && \
         tmux kill-session -t delete-me && \
         tmux attach || tmux attach'
+
 alias rebuild='cd .. && rm -rf build/ && mkdir build && cd build && cmake ..'
 
 
