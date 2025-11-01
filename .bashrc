@@ -120,3 +120,14 @@ if command -v powerline-daemon >/dev/null 2>&1; then
     export POWERLINE_BASH_SELECT=1
     source /usr/lib/python3.13/site-packages/powerline/bindings/bash/powerline.sh
 fi
+
+alias gpf='git push -f'
+alias gca='git commit --amend'
+
+gco() { git checkout "$@"; }
+ga() { git add "$@"; }
+gst() { git status "$@"; }
+gc() { git commit "$@"; }
+gcm() { git commit -m "$@"; }
+gph() { git push "$@"; }
+gpl() { git pull "$@"; }
